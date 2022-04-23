@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
+
 <body>
     <!--awal header -->
     <header>
@@ -31,17 +33,19 @@
     <section class="home" id="home">
         <div class="content">
             <h3>app landing page</h3>
-            <p>Learn how to create a mobile app landing page in a few simple steps with the help of pre-made templates and a fully customizable landing page builder leading to another page such as your e-commerce site, or lead generation based.</p>
+            <p>Learn how to create a mobile app landing page in a few simple steps with the help of pre-made templates
+                and a fully customizable landing page builder leading to another page such as your e-commerce site, or
+                lead generation based.</p>
             <a href="#" class="btn">get started</a>
         </div>
 
         <div class="swiper-container image-slider">
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="img/app 1.jpg" alt="1"></div>
-                <div class="swiper-slide"><img src="img/app 2.jpg" alt="2"></div>
-                <div class="swiper-slide"><img src="img/app 3.jpg" alt="3"></div>
-                <div class="swiper-slide"><img src="img/app 4.jpg" alt="4"></div>
-                <div class="swiper-slide"><img src="img/app 6.jpg" alt="5"></div>
+                <div class="swiper-slide"><img src="img/w-1.png" alt="1"></div>
+                <div class="swiper-slide"><img src="img/w-2.png" alt="2"></div>
+                <div class="swiper-slide"><img src="img/w-3.png" alt="3"></div>
+                <div class="swiper-slide"><img src="img/w-4.png" alt="4"></div>
+                <div class="swiper-slide"><img src="img/w-5.png" alt="5"></div>
             </div>
         </div>
     </section>
@@ -102,8 +106,11 @@
 
             <div class="content">
                 <h3>take a look around our app</h3>
-                <p>Your have done a great job building your brand and creating a website that represents it. Now you have to make sure that all of that hard work translates into sales. If you are looking for an effective lead conversion tool, landing pages are definitely the way to go.</p>
-                <p>A landing page is a great way to drive traffic, improve your SEO and build your brand. It can also form part of an effective PPC strategy.</p>
+                <p>Your have done a great job building your brand and creating a website that represents it. Now you
+                    have to make sure that all of that hard work translates into sales. If you are looking for an
+                    effective lead conversion tool, landing pages are definitely the way to go.</p>
+                <p>A landing page is a great way to drive traffic, improve your SEO and build your brand. It can also
+                    form part of an effective PPC strategy.</p>
                 <div class="buutons">
                     <a href="#"><img src="img/google-btn.png" alt="google-btn"></a>
                     <a href="#"><img src="img/app-store-btn.png" alt="app-store-btn"></a>
@@ -286,7 +293,7 @@
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        var swiper = new Swiper(".image-slider", {
+        const swiper = new Swiper(".image-slider", {
             effect: "coverflow",
             grabCursor: true,
             centerSlides: true,
@@ -305,18 +312,19 @@
             },
         });
 
-        let menu = document.querySelector('#menu-bar');
-        let navbar = document.querySelector('.navbar');
+        const menu = document.querySelector('#menu-bar');
+        const navbar = document.querySelector('.navbar');
 
-        menu.addEventListener('click', () =>{
+        menu.addEventListener('click', () => {
             menu.classList.toggle('fa-times');
             navbar.classList.toggle('nav-toggle');
         });
 
-        window.onscroll = () =>{
+        window.onscroll = () => {
             menu.classList.remove('fa-times');
             navbar.classList.remove('nav-toggle');
         }
     </script>
 </body>
+
 </html>
